@@ -31,7 +31,7 @@ public class ServerApplication {
 		    
 		    // Instantiate a UDP packet to store the client data using the buffer for receiving data
 		    DatagramPacket inputPacket = new DatagramPacket(receivingDataBuffer, receivingDataBuffer.length);
-		    System.out.println("Waiting for a client to connect...");
+		    System.out.println("Waiting for a client to connect...\n");
 		    
 		    // Receive data from the client and store in inputPacket
 		    serverSocket.receive(inputPacket);
@@ -39,6 +39,7 @@ public class ServerApplication {
 		    // Printing out the client sent data
 		    String receivedData = new String(inputPacket.getData()).trim();
 		    System.out.println("Sent from the client: " + receivedData);
+		    System.out.println();
 		    
 		    // Process data - count length and send as int
 		    String messageLength = Integer.toString(receivedData.length());

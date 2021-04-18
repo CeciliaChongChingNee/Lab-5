@@ -1,9 +1,7 @@
-
 import java.math.BigInteger;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
 
 /**
  * This program demonstrate the implementation of DatagramPacket and DatagramSocket
